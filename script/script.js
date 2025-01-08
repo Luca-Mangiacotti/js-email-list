@@ -9,22 +9,29 @@
 // Buon Lavoro
 
 //FUNCTION
-axios.get('https://flynn.boolean.careers/exercises/api/random/mail')
-  .then(function (newMail) {
-    // handle success
-    const currentMail = newMail.data.response
-    console.log(currentMail)
-    ListElm.innerHTML = `<li>${currentMail}</li>`
-  })
-  .catch(function (error) {
-    // handle error
-    console.log(error);
-  })
-  .finally(function () {
-    // always executed
-  });
+
+function createList(){
+    for(let i = 1; i <= 10; i++){
+        axios.get('https://flynn.boolean.careers/exercises/api/random/mail')
+        .then(function (newMail) {
+            // handle success
+            const currentMail = newMail.data.response
+            console.log(currentMail)
+            ListElm.innerHTML += `<li>${currentMail}</li>`
+    })
+    }
+    // .catch(function (error) {
+    //     // handle error
+    //     console.log(error);
+    // })
+    // .finally(function () {
+    //     // always executed
+    // })
+}
 
 //DOM ELEMENTS
 const ListElm = document.getElementById("mailList")
 
 //EVENT
+
+createList()
