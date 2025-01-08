@@ -1,0 +1,38 @@
+body{
+    background-color: bisque;
+    font-family: "Fredoka";
+}
+
+h2{
+    
+    font-weight: 600; 
+    color: #b48383;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    display: flex;
+    align-items: center;
+}
+
+li img{
+    margin-right: 5px;
+
+}
+
+#btn{
+    font-weight: 600;
+    background-color: #b48383;
+    border: 0px;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+#btn:hover {
+    background-color: #d48383;
+    font-size: 18px;
+    transition: 0.5s;
+  }
