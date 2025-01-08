@@ -18,14 +18,12 @@ function createList(){
             console.log(currentMail)
             ListElm.innerHTML += `<li>${currentMail}</li>`
     })
-    // .catch(function (error) {
-    //     // handle error
-    //     console.log(error);
-    // })
-    // .finally(function () {
-    //     // always executed
-    // })
     }
+}
+
+function createNewList(){
+    ListElm.innerHTML = ``
+    createList()
 }
 
 //DOM ELEMENTS
@@ -35,4 +33,4 @@ const BtnElm = document.getElementById("btn")
 //EVENT
 
 createList()
-BtnElm.addEventListener("click", createList)
+BtnElm.addEventListener("click", createNewList)
