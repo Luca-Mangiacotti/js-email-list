@@ -1,12 +1,29 @@
+
+/*----------------
+    COMMONS SET
+------------------*/
+
 body{
-    background-color: bisque;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    display: flex;
+    background-color: #ffe5b8;
     font-family: "Fredoka";
+    justify-content: space-between;
+    align-items: center;
 }
+
+/*----------------
+    BODY
+------------------*/
 
 h2{
     
     font-weight: 600; 
-    color: #b48383;
+    color: #faa514;
+    text-shadow: black;
 }
 
 ul{
@@ -25,14 +42,18 @@ li img{
 
 #btn{
     font-weight: 600;
-    background-color: #b48383;
+    background-color: #faa514;
     border: 0px;
     padding: 5px;
     border-radius: 20px;
 }
 
 #btn:hover {
-    background-color: #d48383;
+    background-color: #ffc96b;
     font-size: 18px;
     transition: 0.5s;
-  }
+}
+
+#mainLogo{
+    max-width: 350px ;
+}
